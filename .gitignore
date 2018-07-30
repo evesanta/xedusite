@@ -90,5 +90,3 @@ typings/
 
 # Serverless directories
 .serverless
-
-package-lock.json

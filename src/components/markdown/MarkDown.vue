@@ -6,9 +6,9 @@
 
 <script>
 import Vue from 'vue'
-import 'highlight.js/styles/docco.css'
 import marked from 'marked'
 import Highlight from 'vue-markdown-highlight'
+import 'highlight.js/styles/docco.css'
 Vue.use(Highlight)
 export default {
   name: 'markdown',

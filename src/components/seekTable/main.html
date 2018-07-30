@@ -1,0 +1,17 @@
+<div>
+  <button @click='nowTime=30'>コンツア</button>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th class='time'>時間</th>
+        <th class='name'>チャプター</th>
+      </tr>
+    </thead>
+    <tbody id='tableBody'>
+      <tr v-for='(item, index) in tableData' :class='{ "nowPlay": item.time <= nowTime && nowTime < item.endTime}' @click='changeContents(index)'>
+        <td class='time'>{{ item.time | toTime }}</td>
+        <td class='name'>{{ item.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

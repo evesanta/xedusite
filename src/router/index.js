@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Markdown from '@/components/markdown/Markdown'
 import MyVideo from '@/components/video/Video'
+import SeekTable from '@/components/seekTable/SeekTable'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/video',
       name: 'MyVideo',
       component: MyVideo
+    },
+    {
+      path: '/seektable',
+      name: 'seekTable',
+      component: SeekTable
     }
   ]
 })

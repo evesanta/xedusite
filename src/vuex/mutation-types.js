@@ -1,0 +1,1 @@
+export const GET_MARKDOWN = 'GET_MARKDOWN'

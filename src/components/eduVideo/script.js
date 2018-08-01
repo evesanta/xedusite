@@ -3,6 +3,7 @@ import items from './items/Items'
 import seekTable from './seekTable/SeekTable'
 import markdown from './markdown/Markdown'
 import vue from 'vue'
+
 export default {
   name: 'EduVideo',
   data () {

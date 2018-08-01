@@ -9,7 +9,7 @@ export default {
     }
   },
   mounted() {
-    const video = document.getElementById("video")
+    const video = document.getElementById("myvideo")
     video.addEventListener('timeupdate', () => {
       this.nowTime = video.currentTime
       this.$store.commit('SET_NOW_TIME', this.nowTime)
@@ -17,12 +17,12 @@ export default {
   },
   methods: {
     changeTime: time => {
-      const video = document.getElementById("video")
+      const video = document.getElementById("myvideo")
       video.currentTime = time
-      video.play();
+      video.play()
     },
-    saisei: () => {
-      const video = document.getElementById("video")
+    saisei: function (){
+      const video = document.getElementById("myvideo")
       video.paused ? video.play() : video.pause()
     }
   },

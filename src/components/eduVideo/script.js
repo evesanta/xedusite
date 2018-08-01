@@ -1,4 +1,7 @@
 import MyVideo from './video/Video'
+import items from './items/Items'
+import seekTable from './seekTable/SeekTable'
+import markdown from './markdown/Markdown'
 export default {
   name: 'EduVideo',
   data () {
@@ -12,6 +15,9 @@ export default {
   computed: {
   },
   components: {
-    MyVideo
+    MyVideo,
+    items,
+    seekTable,
+    markdown
   }
 }

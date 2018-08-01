@@ -11,6 +11,7 @@ export default {
     const video = document.getElementById("video")
     video.addEventListener('timeupdate', () => {
       this.nowTime = video.currentTime
+      this.$store.commit('SET_NOW_TIME', this.nowTime)
     }, false)
   },
   methods: {

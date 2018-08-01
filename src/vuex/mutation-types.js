@@ -1,1 +1,1 @@
-export const GET_MARKDOWN = 'GET_MARKDOWN'
+export const SET_NOW_TIME = 'SET_NOW_TIME'

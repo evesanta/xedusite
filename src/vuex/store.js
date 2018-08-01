@@ -1,6 +1,10 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
 
+import {
+  SET_NOW_TIME
+} from './mutation-types'
+
 Vue.use(Vuex)
 
 const state = {
@@ -59,7 +63,11 @@ const getters = {
   getNextName: state => state.jsonData.nextName,
   getGitHub: state => state.jsonData.github
 }
-const mutations = {}
+const mutations = {
+  [SET_NOW_TIME] (state, time) {
+    state.nowTime = time
+  }
+}
 
 export default new Vuex.Store({
   state,

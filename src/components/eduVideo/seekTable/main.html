@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody id='tableBody'>
-      <tr v-for='(item, index) in tableData' :class='{ "nowPlay": item.time <= getNowTime && getNowTime < item.endTime}' @click='changeContents(index)'>
+      <tr v-for='(item, index) in tableData' :class='{ "nowPlay": item.time <= nowTime && nowTime < item.endTime}' @click='changeContents(index)'>
         <td class='time'>{{ item.time | toTime }}</td>
         <td class='name'>{{ item.name }}</td>
       </tr>

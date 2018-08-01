@@ -18,16 +18,18 @@ export default {
     }, false)
   },
   methods: {
-    saisei: function (data){
-      console.log(data)
-    },
-    hen: function () {
-      console.log("hen")
-      this.$store.state.videoEntity.play()
-    },
+    // hen: function () {
+    //   console.log("hen")
+    //   this.$store.state.videoEntity.play()
+    // },
     play: function (){
       const video = this.$store.state.videoEntity
       video.paused ? video.play() : video.pause()
+    },
+    changeTime: function( time ){
+      const video = this.$store.state.videoEntity
+      video.currentTime = time;
+      video.play();
     }
   },
   created: function () {

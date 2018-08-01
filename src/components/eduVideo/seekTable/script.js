@@ -1,7 +1,7 @@
 import { mapGetters } from 'vuex'
 export default {
   name: 'SeekTable',
-  props: ['saisei', 'nowTime'],
+  props: ['nowTime'],
   data () {
     return {
       tableData: []
@@ -14,7 +14,7 @@ export default {
     },
     changeContents: function (index) {
       console.log(this.tableData[index].time)
-      // ここにchangeTimeを呼び出す処理を入れる
+      this.$emit("changeTime", this.tableData[index].time)
     },
     hen: function (){
       console.log(this.nowTime)

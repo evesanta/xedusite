@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Markdown from '@/components/markdown/Markdown'
-import MyVideo from '@/components/video/Video'
-import SeekTable from '@/components/seekTable/SeekTable'
-import Items from '@/components/items/Items'
+import Markdown from '@/components/eduVideo/markdown/Markdown'
+import MyVideo from '@/components/eduVideo/video/Video'
+import SeekTable from '@/components/eduVideo/seekTable/SeekTable'
+import Items from '@/components/eduVideo/items/Items'
 
 Vue.use(Router)
 

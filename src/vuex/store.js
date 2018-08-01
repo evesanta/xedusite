@@ -2,12 +2,14 @@ import Vuex from 'vuex'
 import Vue from 'vue'
 
 import {
-  SET_NOW_TIME
+  SET_NOW_TIME,
+  SET_VIDEO
 } from './mutation-types'
 
 Vue.use(Vuex)
 
 const state = {
+  videoEntity: null,
   nowTime: 0,
   jsonData: {
     videoURL: 'https://rjie.meijo-u.ac.jp/lectures/Prog4/video/Java_HowToCompile.mp4',
@@ -67,6 +69,9 @@ const getters = {
 const mutations = {
   [SET_NOW_TIME] (state, time) {
     state.nowTime = time
+  },
+  [SET_VIDEO] (state, v) {
+    state.videoEntity = v
   }
 }
 

@@ -1,7 +1,7 @@
 <div>
-  <button @click="saisei">asdfajsdfl;jak</button>
-  <MyVideo class='aaa'></MyVideo>
+  <button @click="hen">asdfajsdfl;jak</button>
+  <MyVideo class='aaa' @play='play'></MyVideo>
   <items></items>
-  <seekTable @set='saisei'></seekTable>
+  <seekTable @saisei='saisei' :nowTime="nowTime"></seekTable>
   <markdown></markdown>
 </div>

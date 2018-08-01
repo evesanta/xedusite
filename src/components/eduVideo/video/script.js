@@ -10,10 +10,7 @@ export default {
   },
   mounted() {
     const video = document.getElementById("myvideo")
-    video.addEventListener('timeupdate', () => {
-      this.nowTime = video.currentTime
-      this.$store.commit('SET_NOW_TIME', this.nowTime)
-    }, false)
+    this.$store.commit('SET_VIDEO', video)
   },
   methods: {
     changeTime: time => {
@@ -22,8 +19,7 @@ export default {
       video.play()
     },
     saisei: function (){
-      const video = document.getElementById("myvideo")
-      video.paused ? video.play() : video.pause()
+      this.$emit("play")
     }
   },
   created: function () {

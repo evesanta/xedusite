@@ -11,7 +11,7 @@ export default {
   },
   mounted() {},
   methods: {
-    saisei: function ( data ){
+    saisei: function (data){
       console.log(data)
     }
   },

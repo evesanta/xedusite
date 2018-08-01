@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header>
+      情報工学科
+    </header>
     <router-view/>
   </div>
 </template>
@@ -11,13 +13,24 @@ export default {
 }
 </script>
 
-<style>
+<style style='scss'>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+header {
+  height: 40px;
+  line-height: 40px;
+  background-color: #6CA;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 </style>

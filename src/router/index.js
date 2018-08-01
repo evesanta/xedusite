@@ -5,6 +5,7 @@ import Markdown from '@/components/eduVideo/markdown/Markdown'
 import MyVideo from '@/components/eduVideo/video/Video'
 import SeekTable from '@/components/eduVideo/seekTable/SeekTable'
 import Items from '@/components/eduVideo/items/Items'
+import EduVideo from '@/components/eduVideo/EduVideo'
 
 Vue.use(Router)
 
@@ -21,7 +22,7 @@ export default new Router({
       component: Markdown
     },
     {
-      path: '/video',
+      path: '/myvideo',
       name: 'MyVideo',
       component: MyVideo
     },
@@ -34,6 +35,11 @@ export default new Router({
       path: '/items',
       name: 'items',
       component: Items
+    },
+    {
+      path: '/video',
+      name: 'eduVideo',
+      component: EduVideo
     }
   ]
 })

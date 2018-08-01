@@ -6,7 +6,7 @@ Vue.use(Vuex)
 const state = {
   nowTime: 0,
   jsonData: {
-    videoURL: 'https://rprjie.meijo-u.ac.jp/lectures/Prog4/video/Java_HowToCompile.mp4',
+    videoURL: 'https://rjie.meijo-u.ac.jp/lectures/Prog4/video/Java_HowToCompile.mp4',
     chapter: [
       {
         'time': '7',

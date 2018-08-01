@@ -1,3 +1,4 @@
+import MyVideo from './video/Video'
 export default {
   name: 'EduVideo',
   data () {
@@ -9,6 +10,8 @@ export default {
   created: function(){
   },
   computed: {
-
+  },
+  components: {
+    MyVideo
   }
 }

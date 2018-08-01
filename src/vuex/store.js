@@ -61,7 +61,8 @@ const getters = {
   getPreName: state => state.jsonData.preName,
   getNextVideo: state => state.jsonData.nextVideo,
   getNextName: state => state.jsonData.nextName,
-  getGitHub: state => state.jsonData.github
+  getGitHub: state => state.jsonData.github,
+  getNowTime: state => state.nowTime
 }
 const mutations = {
   [SET_NOW_TIME] (state, time) {

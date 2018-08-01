@@ -1,4 +1,5 @@
 import { mapGetters } from 'vuex'
+import vue from 'vue'
 
 export default {
   name: 'MyVideo',
@@ -24,6 +25,9 @@ export default {
       const video = document.getElementById("video")
       video.paused ? video.play() : video.pause()
     }
+  },
+  created: function () {
+    // vue.$on('change-Time', this.changeTime)
   },
   computed: {
     ...mapGetters(['getURL'])

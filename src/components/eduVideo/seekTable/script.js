@@ -1,4 +1,3 @@
-import { mapGetters } from 'vuex'
 export default {
   name: 'SeekTable',
   props: ['nowTime'],
@@ -25,7 +24,6 @@ export default {
     this.update()
   },
   computed: {
-    ...mapGetters(['getNowTime'])
   },
   filters: {
     toTime: value => {

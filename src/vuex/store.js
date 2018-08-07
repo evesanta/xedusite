@@ -12,7 +12,7 @@ const state = {
   videoEntity: null,
   nowTime: 0,
   jsonData: {
-    videoURL: 'https://rjie.meijo-u.ac.jp/lectures/Prog4/video/Java_HowToCompile.mp4',
+    videoURL: 'https://rprjie.meijo-u.ac.jp/lectures/Prog4/video/Java_HowToCompile.mp4',
     chapter: [
       {
         'time': '7',

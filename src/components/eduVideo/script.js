@@ -18,10 +18,6 @@ export default {
     }, false)
   },
   methods: {
-    // hen: function () {
-    //   console.log("hen")
-    //   this.$store.state.videoEntity.play()
-    // },
     play: function (){
       const video = this.$store.state.videoEntity
       video.paused ? video.play() : video.pause()

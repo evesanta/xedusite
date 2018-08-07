@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <img src="./assets/logo.png"> -->
     <header>
       情報工学科
     </header>

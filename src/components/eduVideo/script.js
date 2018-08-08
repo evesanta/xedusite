@@ -26,6 +26,9 @@ export default {
       const video = this.$store.state.videoEntity
       video.currentTime = time;
       video.play();
+    },
+    getJson: function () {
+      this.$store.commit('CHANGE_JSONDATA', this.$route.params.id)
     }
   },
   created: function () {
@@ -37,5 +40,11 @@ export default {
     items,
     seekTable,
     markdown
+  },
+  watch: {
+    '$route' (to, from) {
+
+      // console.log(getJson(this.$route.params.id))
+    }
   }
 }

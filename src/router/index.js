@@ -37,7 +37,7 @@ export default new Router({
       component: Items
     },
     {
-      path: '/video',
+      path: '/video/:id',
       name: 'eduVideo',
       component: EduVideo
     }

@@ -1,9 +1,11 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
+import axios from 'axios'
 
 import {
   SET_NOW_TIME,
-  SET_VIDEO
+  SET_VIDEO,
+  CHANGE_JSONDATA
 } from './mutation-types'
 
 Vue.use(Vuex)
@@ -55,7 +57,23 @@ const state = {
     'github': ''
   }
 }
-const actions = {}
+
+var getJson = function (videoID) {
+  var getData = null
+  // axios.get('./assets/jsonFile/' + videoID + '.json').then(x => {
+  axios.get('./111.json').then(x => {
+    getData = x.data
+  })
+  console.log(getData)
+  return getData
+}
+
+const actions = {
+  [CHANGE_JSONDATA] ({ commit }, number) {
+    commit(CHANGE_JSONDATA, number)
+  }
+}
+
 const getters = {
   getMarkDown: state => state.jsonData.source,
   getURL: state => state.jsonData.videoURL,
@@ -72,6 +90,10 @@ const mutations = {
   },
   [SET_VIDEO] (state, v) {
     state.videoEntity = v
+  },
+  [CHANGE_JSONDATA] (state, number) {
+    // state.jsonData = getJson(111)
+    console.log(getJson(number))
   }
 }
 

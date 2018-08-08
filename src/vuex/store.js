@@ -14,7 +14,7 @@ const state = {
   videoEntity: null,
   nowTime: 0,
   jsonData: {
-    url: 'https://youtu.be/luKSeaNmPAM',
+    url: 'https://firebasestorage.googleapis.com/v0/b/eduwebsite-1224.appspot.com/o/sample.mp4?alt=media&token=64381586-bbfe-4a33-a8c3-15d9e9cf2a55',
     chapter: [
       {
         'time': '7',
@@ -33,7 +33,7 @@ const state = {
         'name': 'プログラムの紹介'
       }
     ],
-    source: '# コマンドライン',
+    source: '# タイトルを書いてください\n\n\nソースコードテスト\n\n```java\n/**\n * @author John Smith <john.smith@example.com>\n*/\npackage l2f.gameserver.model;\n\npublic abstract class L2Char extends L2Object {\n  public static final Short ERROR = 0x0001;\n\n  public void moveTo(int x, int y, int z) {\n    _ai = null;\n    log("Should not be called");\n    if (1 > 5) { // wtf!?\n      return;\n    }\n  }\n}\n```\n',
     'preVideo': '1220',
     'preName': 'アクセス制御１',
     'nextVideo': '1340',

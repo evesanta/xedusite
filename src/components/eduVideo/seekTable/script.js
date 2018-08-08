@@ -8,8 +8,8 @@ export default {
   },
   mounted() {},
   methods: {
-    update: function () {
-      this.tableData = getTable(this.$store.state.jsonData.chapter)
+    getTableData: function () {
+      return this.tableData = getTable(this.$store.state.jsonData.chapter)
     },
     changeContents: function (index) {
       console.log(this.tableData[index].time)
@@ -21,7 +21,6 @@ export default {
     }
   },
   created: function(){
-    this.update()
   },
   computed: {
   },

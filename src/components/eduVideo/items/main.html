@@ -1,11 +1,15 @@
-<div>
-  <div v-if='getGitHub!==""'>
-    <button>{{ getGitHub }}</button>
-  </div>
-  <div v-if='getPreVideo!==""'>
-    <button>{{ getPreVideo }}</button>
-  </div>
-  <div v-if='getPreVideo!==""'>
-    <button>{{ getNextVideo }}</button>
-  </div>
+<div class="myItems">
+  <el-row type="flex" class="row-bg">
+    <div v-if='getGitHub!==""'>
+      <button>{{ getGitHub }}</button>
+    </div>
+  </el-row>
+  <el-row type="flex" class="refVideo" justify="end">
+    <el-button-group>
+      <el-button v-if='getPreVideo!==""' type="success" icon="el-icon-arrow-left">Previous : {{ getPreName }}</el-button>
+      <el-button v-else type="success" icon="el-icon-arrow-left" disabled>Previous : None</el-button>
+      <el-button v-if='getNextVideo!==""' type="success">Next : {{ getNextName }}<i class="el-icon-arrow-right el-icon-right"></i></el-button>
+      <el-button v-else type="success" icon="el-icon-arrow-left" disabled>Previous :: None</el-button>
+    </el-button-group>
+  </el-row>
 </div>

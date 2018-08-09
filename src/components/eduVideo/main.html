@@ -1,7 +1,9 @@
-<div>
+<div class="eduVideo">
   <button @click="getJson()">getJsonData</button>
-  <MyVideo class='mainVideo' @play='play'></MyVideo>
-  <items></items>
-  <seekTable @changeTime='changeTime' :nowTime="nowTime"></seekTable>
-  <markdown></markdown>
+  <el-row>
+    <el-col :span="12"><MyVideo class='mainVideo' @play='play'></MyVideo>
+    <items></items>
+    <seekTable @changeTime='changeTime' :nowTime="nowTime"></seekTable></el-col>
+    <el-col :span="12"><markdown></markdown></el-col>
+  </el-row>
 </div>

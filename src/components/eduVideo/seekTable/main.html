@@ -1,18 +1,4 @@
 <div class="mySeekTable">
-  <!-- <table class='table'>
-    <thead>
-      <tr>
-        <th class='time'>時間</th>
-        <th class='name'>チャプター</th>
-      </tr>
-    </thead>
-    <tbody id='tableBody'>
-      <tr v-for='(item, index) in getTableData()' :class='{ "nowPlay": item.origTime <= nowTime && nowTime < item.endTime}' @click='changeContents(index)'>
-        <td class='time'>{{ item.origTime | toTime }}</td>
-        <td class='name'>{{ item.name }}</td>
-      </tr>
-    </tbody>
-  </table> -->
   <el-table
       :data="getTableData()"
       style="width: 100%"

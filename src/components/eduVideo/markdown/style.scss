@@ -1,12 +1,20 @@
 .markdown {
+  box-sizing: border-box;
   text-align: left;
   height: 100%;
   overflow-y: scroll;
+  border: 1px solid #DDD;
+
   h1 {
     color: blue;
   }
-}
 
-.myMarkDown {
-
+  code {
+    .hljs-params{
+      color: black;
+    }
+    .hljs-title{
+      color: #458;
+    }
+  }
 }

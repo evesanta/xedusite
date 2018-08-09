@@ -29,3 +29,7 @@ $videoHeight: 432px;
   width: 100%;
   background-color: blue;
 }
+
+.rightSide {
+  height: calc(100vh - 40px);
+}

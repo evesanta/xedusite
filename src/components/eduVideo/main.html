@@ -5,8 +5,8 @@
       <div class="titleBar" @click="getJson()">タイトル</div>
       <items></items>
       <seekTable @changeTime='changeTime' :nowTime="nowTime" class="seekTable"></seekTable></el-col>
-    <el-col :span="10">
-      <markdown></markdown>
+    <el-col :span="10" class="rightSide">
+      <markdown class="markdown"></markdown>
     </el-col>
   </el-row>
 </div>

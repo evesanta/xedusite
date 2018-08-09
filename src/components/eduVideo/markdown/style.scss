@@ -6,15 +6,143 @@
   border: 1px solid #DDD;
 
   h1 {
-    color: blue;
+    color: #3C7;
+    border-bottom: 5px solid #3C7;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0;
   }
 
   code {
+    background: #f6eee9;
     .hljs-params{
       color: black;
     }
     .hljs-title{
       color: #458;
     }
+  }
+}
+
+code {
+  position: relative;
+  padding: 10px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  display: inline-block;
+  width: 100%;
+}
+.language-java {
+  $lang-color: #ffa342;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+  &::before {
+    position: absolute;
+    content: "Java";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+.language-css {
+  $lang-color: #4299ff;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "CSS";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+
+.language-js {
+  $lang-color: #e2df00;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "JavaScript";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+
+.language-ruby {
+  $lang-color: #ff6c6c;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "Ruby";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+
+.language-cpp {
+  $lang-color: #1fd3d9;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "C++";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+
+.language-markdown {
+  $lang-color: #711fd9;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "MarkDown";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
+  }
+}
+
+.language-tex {
+  $lang-color: #2a7ee0;
+  border: 2px solid $lang-color;
+  padding-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "Tex";
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 2px 7px;
+    background-color: $lang-color;
   }
 }

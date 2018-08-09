@@ -1,4 +1,4 @@
-<div>
+<div class="mySeekTable">
   <!-- <table class='table'>
     <thead>
       <tr>
@@ -17,16 +17,16 @@
       :data="getTableData()"
       style="width: 100%"
       :row-class-name="tableRowClassName"
-      @row-click='changeContents'>
+      @row-click='changeContents'
+      height="100%">
       <el-table-column
         prop="time"
-        label="Date"
-        width="180">
+        label="時間"
+        width="100px">
       </el-table-column>
       <el-table-column
         prop="name"
-        label="Name"
-        width="180">
+        label="チャプター">
       </el-table-column>
     </el-table>
 </div>

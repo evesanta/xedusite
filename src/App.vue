@@ -28,10 +28,11 @@ body {
 
 header {
   height: 40px;
-  line-height: 40px;
+  line-height: 50px;
   background-color: #6CA;
   color: white;
   font-size: 24px;
   font-weight: bold;
+  padding-left: 20px
 }
 </style>

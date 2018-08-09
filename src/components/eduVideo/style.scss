@@ -1,13 +1,31 @@
+$headerH: 40px;
+$main-width: 1300px;
+$videoHeight: 432px;
+
 .eduVideo {
+  height: calc(100vh - 40px);
   background-color: #FFF;
+  width: 100vw;
+  min-width: $main-width;
 }
 
 .mainVideo {
   width: 100%;
-  height: 400px;
+  height: $videoHeight;
   background-color: #000;
   video{
     width: 100%;
     height: 100%;
   }
+}
+
+.titleBar {
+  height: 40px;
+  background-color: #DDF;
+}
+
+.seekTable {
+  height: calc(100vh - 432px - 50px - 40px - 40px);
+  width: 100%;
+  background-color: blue;
 }

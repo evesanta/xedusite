@@ -22,6 +22,7 @@
     "sass-loader": "^7.0.3",
     "vue": "^2.5.2",
     "vue-markdown": "^2.2.4",
+    "vue-octicon": "^2.1.1",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

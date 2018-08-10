@@ -62,7 +62,7 @@ const state = {
     'preName': 'アクセス制御１',
     'nextVideo': '1340',
     'nextName': 'アクセス制御３',
-    'github': ''
+    'github': 'https://github.com/evesanta/eduWebSite/blob/master/src/js/components/video/style.scss'
   }
 }
 

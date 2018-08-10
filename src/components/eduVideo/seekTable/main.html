@@ -1,5 +1,6 @@
 <div class="mySeekTable">
-  <el-table
+  <el-tooltip class="item" effect="dark" content="チャプタークリックでジャンプ" placement="top" :open-delay="700">
+    <el-table
       :data="getTableData()"
       style="width: 100%"
       :row-class-name="tableRowClassName"
@@ -15,4 +16,5 @@
         label="チャプター">
       </el-table-column>
     </el-table>
+  </el-tooltip>
 </div>

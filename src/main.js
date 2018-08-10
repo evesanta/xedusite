@@ -7,8 +7,11 @@ import store from './vuex/store.js'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import Octicon from 'vue-octicon/components/Octicon.vue'
+import 'vue-octicon/icons'
 
 Vue.use(ElementUI)
+Vue.use(Octicon)
 
 Vue.config.productionTip = false
 

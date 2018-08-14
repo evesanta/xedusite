@@ -1,11 +1,7 @@
-.nowPlay {
-  background: green;
-}
-
 .el-table .nowPlay {
   background: #DFC;
 }
 
-.el-table .success-row {
-  background: #f0f9eb;
+.el-table__row {
+  transition: background 0.5s ease;
 }

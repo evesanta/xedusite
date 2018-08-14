@@ -37,13 +37,13 @@ code {
   display: inline-block;
   width: 100%;
 }
-.language-java {
-  $lang-color: #ffa342;
+
+@mixin lang($lang-color, $text){
   border: 2px solid $lang-color;
   padding-top: 25px;
   &::before {
     position: absolute;
-    content: "Java";
+    content: $text;
     color: white;
     top: 0;
     left: 0;
@@ -51,98 +51,30 @@ code {
     background-color: $lang-color;
   }
 }
-.language-css {
-  $lang-color: #4299ff;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
 
-  &::before {
-    position: absolute;
-    content: "CSS";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+.language-java {
+  @include lang(#ffa342, "Java");
+}
+.language-css {
+  @include lang(#4299ff, "CSS");
 }
 
 .language-js {
-  $lang-color: #e2df00;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
-
-  &::before {
-    position: absolute;
-    content: "JavaScript";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+  @include lang(#e2df00, "JavaScript");
 }
 
 .language-ruby {
-  $lang-color: #ff6c6c;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
-
-  &::before {
-    position: absolute;
-    content: "Ruby";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+  @include lang(#ff6c6c, "Ruby");
 }
 
 .language-cpp {
-  $lang-color: #1fd3d9;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
-
-  &::before {
-    position: absolute;
-    content: "C++";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+  @include lang(#1fd3d9, "C++");
 }
 
 .language-markdown {
-  $lang-color: #711fd9;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
-
-  &::before {
-    position: absolute;
-    content: "MarkDown";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+  @include lang(#711fd9, "MarkDown");
 }
 
 .language-tex {
-  $lang-color: #2a7ee0;
-  border: 2px solid $lang-color;
-  padding-top: 25px;
-
-  &::before {
-    position: absolute;
-    content: "Tex";
-    color: white;
-    top: 0;
-    left: 0;
-    padding: 2px 7px;
-    background-color: $lang-color;
-  }
+  @include lang(#2a7ee0, "Tex");
 }
